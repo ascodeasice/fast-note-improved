@@ -1,4 +1,4 @@
-# Fast Note
+# Fast Note Improved
 
 This is a custom version of the chrome extension [Fast Note](https://github.com/yasuoza/chrome-extension-FastNote), containing code of original project, and some extra functionality.
 

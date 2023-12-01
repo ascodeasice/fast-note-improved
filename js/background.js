@@ -9,6 +9,10 @@
 
   function init() {
     var data = document.getElementById('data');
+    if (!data) {
+      return;
+    }
+    data.focus();
     data.value = localStorage.getItem('data');
     data.onkeyup = storeData;
     storeData();
