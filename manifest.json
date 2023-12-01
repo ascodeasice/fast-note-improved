@@ -1,7 +1,7 @@
 {
-   "name": "Fast Note",
-   "version": "1.2.0",
-   "description": "Super fast note storage",
+   "name": "Fast Note Improved",
+   "version": "1.0.0",
+   "description": "Super fast note storage with more functionality",
    "manifest_version": 2,
    "background": {
      "scripts": [
