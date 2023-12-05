@@ -5,6 +5,8 @@
     if (height < 100) height = 100;
     data.style.height = height + 'px';
     data.style.height = parseInt(data.scrollHeight) + 'px';
+    data.blur();
+    data.focus();
   }
 
   function init() {
@@ -12,7 +14,6 @@
     if (!data) {
       return;
     }
-    data.focus();
     data.value = localStorage.getItem('data');
     data.onkeyup = storeData;
     storeData();
