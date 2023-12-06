@@ -1,3 +1,5 @@
+let firstOpen = true;
+
 (function () {
   function storeData() {
     localStorage.setItem('data', data.value);
@@ -5,8 +7,13 @@
     if (height < 100) height = 100;
     data.style.height = height + 'px';
     data.style.height = parseInt(data.scrollHeight) + 'px';
-    data.blur();
-    data.focus();
+
+    // only refocus on first open, to successfully input chinese
+    if (firstOpen) {
+      data.blur();
+      data.focus();
+      firstOpen = false;
+    }
   }
 
   function init() {
